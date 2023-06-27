@@ -4,20 +4,37 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+    <h1 class="page-heading">Greetings, I am Sergiu Lucec</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <p>I am a connoisseur of data, a virtuoso of variables, and a maverick of machine learning. Armed with my trusty skills in various domains [...], I orchestrate symphonies of statistics and craft masterpieces of machine learning. Dare to explore my gallery of projects below, each one a testament to my dedication and finesse.</p>
+    
+    <section>
+        <h2>Project 1: The Mona Lisa of Machine Learning</h2>
+        <p>Behold my pièce de résistance, a project that is an amazing excellent project [...]. It's not merely a project, it's a revolution disguised in code. </p>
+        <a href="[Link coming soon]">Admire this Masterpiece</a>
+    </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <section>
+        <h2>Project 2: The Starry Night of Statistics</h2>
+        <p>This creation of astonishing status [...] sparkles with the brilliance of a thousand algorithms. It's not simply a dataset, it's a sonnet written in the language of data.</p>
+        <a href="[Link coming soon]">Witness the Wonder</a>
+    </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <p>Should you wish to discuss the finer points of data science or simply swap stories about the thrill of a perfectly trained model, please do not hesitate to contact me at [email].</p>
 
+    <h1 class="page-heading">Posts</h1>
+
+    <ul class="post-list">
+        {% for post in site.posts %}
+            <li>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <h2>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  
 </div>
